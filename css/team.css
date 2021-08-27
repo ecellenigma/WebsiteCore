@@ -1,0 +1,92 @@
+::placeholder, a, a:hover { color: inherit; }
+
+body { cursor: default; overflow-x: none; }
+body, button, input { font-family: 'Poppins', sans-serif; }
+body > section:not([id="landing"]) { background-color: white; }
+input { outline: none; border: none; }
+figure, p { margin: 0; }
+
+.nav-item .nav-link:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: #292929 !important;
+    opacity: .7;
+}
+#landing{
+  color:black ;
+}
+.navbar-toggler {
+    background-color: transparent !important;
+    opacity: .8;
+    border-width: 01px !important;
+}
+.btn { padding: .2em 1.4em !important; }
+.bg-white { background-color: white !important; }
+
+.dimmed { background-color: rgba(255, 255, 255, .8); }
+.text-muted {
+    color: inherit !important;
+    opacity: .9;
+}
+.nav{
+  padding-left: 0px;
+}
+.bg-img-default {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.divider-sm {
+    width: 100px;
+    border-width: 6px;
+    border-color: inherit;
+}
+.shadow-2 {
+    position: relative;
+    box-shadow: 0 0 25px rgba(97, 97, 97, .52);
+}
+
+
+/*#landing #content {
+    margin-top: 16vh;
+    padding-bottom: 20vh;
+}*/
+
+
+
+#our-team { padding: 5.6rem 0;}
+.hmm{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+#our-team img {
+    height: 270px;
+    object-fit: cover;
+}
+#our-team i { transition: opacity .2s;}
+#our-team i:hover { opacity: .5; }
+#our-team .card > div {
+    background-color: rgba(30, 30, 30, .7);
+    transform: translateX(-100%);
+    transition: transform .35s;
+}
+
+#our-team .card:hover > div { transform: translateX(0); }
+#our-team #card1 {
+  padding-top: 15px ;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+#info { background-color: #64C65E; }
+#info .col-md-4:nth-child(2) { transform: scale(1.1); }
+@media (max-width: 768px) { #info .col-md-4:nth-child(2) { transform: scale(1); } }
+
+
+#footer { padding: 4vw 0 0; }
+
+
+#footer * { line-height: 180%; }
+#footer #footer-bottom { background-color: #1A5276; }
+#footer #mail { color: black; }
+@media (max-width: 992px) { #footer #conatct { border: none !important; } }

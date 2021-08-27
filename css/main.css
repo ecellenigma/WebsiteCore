@@ -1,0 +1,36 @@
+.counters {
+
+color: #fff;
+background-color: white;
+padding: 40px 20px;
+
+}
+
+.counters .container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 15px;
+text-align: center;
+}
+
+.counters i {
+color: black;
+margin-bottom: 5px;
+}
+
+.counters .counter {
+font-size: 45px;
+margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+.counters .container {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.counters .container > div:nth-of-type(1),
+.counters .container > div:nth-of-type(2) {
+border-bottom: 1px lightskyblue solid;
+padding-bottom: 20px;
+}
+}
