@@ -534,93 +534,12 @@
                         </div>
 
                         <!-- Contact Form -->
-                                <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <form name="contact" method="POST" data-netlify="true">
-
-                                <div class="clearfix">
-
-                                    <div class="cf-left-col">
-
-<!--                                         Name -->
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" class="input-md round form-control"
-                                                placeholder="Name" pattern=".{3,100}" required aria-required="true">
-                                        </div>
-
-                                        <!-- Email -->
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email"
-                                                class="input-md round form-control" placeholder="Email"
-                                                pattern=".{5,100}" required aria-required="true">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="cf-right-col">
-
-                                        <!-- Message -->
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" class="input-md round form-control"
-                                                style="height: 84px;" placeholder="Message"></textarea>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="clearfix">
-
-                                    <div class="cf-left-col">
-
-                                        <!-- Inform Tip -->
-                                        <div class="form-tip pt-20">
-                                            <i class="fa fa-info-circle"></i> All the fields are required
-                                        </div>
-
-                                    </div>
-
-                                    <div class="cf-right-col">
-
-                                        <!-- Send Button -->
-                                        <div class="align-right pt-10">
-                                            <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn"
-                                                type="submit">Submit Message</button>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                        
-                            <form name="contact" method="POST" data-netlify="true">
-  <p>
-  <div class="form-group">
-    <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}"
-      required aria-required="true">
-  </div>
-  </p>
-  <p>
-  <div class="form-group">
-    <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email"
-      pattern=".{5,100}" required aria-required="true">
-  </div>
-  </p>
-  <p>
-  <div class="form-group">
-    <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;"
-      placeholder="Message"></textarea>
-  </div>
-  </p>
-  <p>
-  <div class="align-right pt-10">
-    <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn" aria-controls="result"
-      type="submit">Submit Message</button>
-  </div>
-  </p>
-</form>
+                         <form name="contact" method="POST" data-netlify="true">    
+                        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                        <button type="submit">Submit</button>
+                      </form>
 
                     </div>
                 </section>
