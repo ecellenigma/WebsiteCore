@@ -599,7 +599,32 @@
                     </div>
                 </section>
                 <!-- End Contact Section -->
-
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+  <div class="form-group">
+    <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}"
+      required aria-required="true">
+  </div>
+  </p>
+  <p>
+  <div class="form-group">
+    <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email"
+      pattern=".{5,100}" required aria-required="true">
+  </div>
+  </p>
+  <p>
+  <div class="form-group">
+    <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;"
+      placeholder="Message"></textarea>
+  </div>
+  </p>
+  <p>
+  <div class="align-right pt-10">
+    <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn" aria-controls="result"
+      type="submit">Submit Message</button>
+  </div>
+  </p>
+</form>
 
 
             </main>
