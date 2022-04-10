@@ -1,0 +1,83 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    transition: .3s;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.heroSection{
+    height: 100vh;
+    background: url('./images/recruit.jpg') center;
+    background-size: cover;
+}
+
+header{
+    overflow: hidden;
+    padding: 10px;
+}
+
+header .logo{
+    float: left;
+}
+
+.heroText{
+    text-align: center;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.heroText h1{
+    font-size: 5em;
+    margin-top: 20%;
+    align-self: center;
+}
+
+.heroText button{
+    color: #fff;
+    background: transparent;
+    border: solid 2px #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.heroText button:hover{
+    cursor: pointer;
+    background: #fff;
+    border: solid 2px #fff;
+    color: #333;
+}
+
+button.joinNow{
+    background: rgb(0, 206, 93);
+    border: solid 2px rgb(0, 206, 93);
+    font-size: medium;
+}
+
+button.joinNow:hover{
+    color: #fff;
+    background: rgb(1, 168, 76);
+    border: solid 2px rgb(1, 168, 76);
+}
+
+footer
+{
+    background-color:aqua;
+    
+}
+

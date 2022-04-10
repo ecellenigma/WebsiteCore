@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form_upcomming.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="brand"><span>ECELL</span> Registration Form</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fa fa-phone"></i> +91 98525 13495 - Aman Verma</li>
+          <li><i class="fa fa-phone"></i> +91 94094 08408 - Balasubramanian V Iyer</li>
+          <li><i class="fa fa-envelope"></i> ecell@nmit.ac.in</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <!-- <div class="alert">Your message has been sent</div> -->
+        <form name="recruitment_form" id="recruitment_form">
+          <div class="alert">Your message sent</div>
+
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Branch</label>
+            <input type="text" name="branch" id="branch" required>
+          </p>
+          <p>
+            <label>Year</label>
+            <input type="text" name="year" id="year" required>
+          </p>
+          <p>
+            <label>USN</label>
+            <input type="text" name="usn" id="usn" required>
+          </p>
+          <p>
+            <label>Email</label>
+            <input type="text" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone" required>
+          </p>
+          <p class="full">
+            <label>What is entrepreneurship according to you?</label>
+            <textarea name="What is entrepreneurship according to you?" rows="5" id="q1"></textarea>
+          </p>
+          <p class="full">
+            <label>Why do you want to join ecell?</label>
+            <textarea name="Why do you want to join ecell?" rows="5" id="q2"></textarea>
+          </p>
+          <p class="full">
+            <label>What do you expect you will gain via joining Ecell ?</label>
+            <textarea name="What do you expect you will gain via joining Ecell ?" rows="5" id="q3"></textarea>
+          </p>
+
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="main_form.js"></script>
+
+</body>
+
+</html>

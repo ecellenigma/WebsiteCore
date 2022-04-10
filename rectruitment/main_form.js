@@ -1,0 +1,72 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyA-0hYwjKf1WR7t86fzMvjc108hz6-VSKQ",
+    authDomain: "form-58f0a.firebaseapp.com",
+    databaseURL: "https://form-58f0a-default-rtdb.firebaseio.com",
+    projectId: "form-58f0a",
+    storageBucket: "form-58f0a.appspot.com",
+    messagingSenderId: "287349648289",
+    appId: "1:287349648289:web:eb4ae8d122b119d38c79e0"
+};
+
+
+// initialize firebase
+firebase.initializeApp(firebaseConfig);
+
+// reference your database
+var contactFormDB = firebase.database().ref("recruitmentForm");
+document.getElementById("recruitment_form").addEventListener("submit", submitForm);
+
+
+
+function submitForm(e) {
+    e.preventDefault();
+
+    var name = getElementVal("name");
+    var branch = getElementVal("branch");
+    var year = getElementVal("year");
+    var usn = getElementVal("usn");
+    var email=getElementVal("email");
+    var phone = getElementVal("phone");
+    var q1 = getElementVal("q1");
+    var q2 = getElementVal("q2");
+    var q3 = getElementVal("q3");
+
+    saveMessages(name, branch, year, usn,email, phone, q1, q2, q3);
+    // console.log(name, branch, year, usn,email, phone, q1, q2, q3);
+    // document.querySelector(".alert").style.display = "block";
+    //   enable alert
+    document.querySelector(".alert").style.display = "block";
+
+    //   remove the alert
+    setTimeout(() => {
+        document.querySelector(".alert").style.display = "none";
+    }, 3000);
+
+    //   reset the form
+    document.getElementById("recruitment_form").reset();
+}
+
+
+
+
+const saveMessages = (name, branch, year, usn,email, phone, q1, q2, q3) => {
+    var newContactForm = contactFormDB.push();
+
+    newContactForm.set({
+        name: name,
+        branch: branch,
+        year: year,
+        usn: usn,
+        email:email,
+        phone: phone,
+        q1: q1,
+        q2: q2,
+        q3: q3,
+    });
+
+};
+
+
+const getElementVal = (id) => {
+    return document.getElementById(id).value;
+};
