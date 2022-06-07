@@ -16,7 +16,10 @@ firebase.initializeApp(firebaseConfig);
 var contactFormDB = firebase.database().ref("recruitmentForm");
 document.getElementById("recruitment_form").addEventListener("submit", submitForm);
 
-
+//Html form to Google sheets Linking
+const scriptURL =
+"https://script.google.com/macros/s/AKfycbxVO4l9YOMl90wcmb2oiht4qxZx6iKlxqnShMtK9qlgPQ1iRjodv06udmWO17_8qNXmWQ/exec";
+const form = document.forms["google-sheet"];
 
 function submitForm(e) {
     e.preventDefault();
@@ -41,7 +44,12 @@ function submitForm(e) {
     setTimeout(() => {
         document.querySelector(".alert").style.display = "none";
     }, 3000);
-
+    
+    //Fetching data from HTML form to GoogleSheets
+fetch(scriptURL, { method: "POST", body: new FormData(form) })
+  .then((response) => alert("Form submitted! Thank you"))
+  .catch((error) => console.error("Error!", error.message));
+    
     //   reset the form
     document.getElementById("recruitment_form").reset();
 }
