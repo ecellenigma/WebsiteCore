@@ -2,7 +2,8 @@
     --primary:#ffba08;
     /* --navbg:rgb(24, 8, 56); */
     --navbg:#03071e;
-    --about:rgb(255, 146, 12);
+    --about:rgb(255, 145, 10);
+    --logoOrange:#ff9651;
     --secondary:#ef233c;
     --neutral:#dee2ff;
     --dark:#303030;
@@ -12,15 +13,18 @@
     transition: all 0.16s linear;
     font-family: "Open Sans", arial, sans-serif !important;
     font-weight: 400 !important;
-    }
-body{
-    overflow-x: hidden;
-    padding: 0 !important;
-    margin: 0 !important;
 }
+*::selection {
+    background: var(--tertiery);
+    color: #000;
+ }
 html,body{
     font-family: 'Roboto Condensed', sans-serif;
     scrollbar-color: #03071e rgb(255, 255, 255);
+    height:100vh !important;
+    overflow-x: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
 } 
 #wave{
     vertical-align:top !important;  /*to remove white space after svg*/
@@ -55,6 +59,10 @@ html,body{
     margin: 8px;
     padding: 8px;
 }
+.mpb8{
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
 .mp16{
     margin: 16px;
     padding: 16px;
@@ -82,7 +90,6 @@ html,body{
     text-align: center;
     flex-wrap: wrap;
 }
-/*Disabling scroll bar visibiity */
 
 /*Navbar*/
 nav{ 
@@ -110,7 +117,7 @@ nav{
 }
 .navItemWrapper{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(7,1fr);
     gap:8px;
 }
 
@@ -232,9 +239,14 @@ cursor:pointer;
 
 
 /*Waves animation*/
-.wave1 path{
+.wave1{
+    mix-blend-mode: lighten;
 
+}
+.wave1 path{
     animation:anim 56s infinite linear;
+    mix-blend-mode: lighten;
+
 }
 
 /*SVG animation keyframes*/
@@ -260,23 +272,19 @@ cursor:pointer;
     }
 }
 .sec2{
-    /* background: linear-gradient(180deg, #F36B3D 8%, rgb(255, 255, 255) 56.41%); */
     background: linear-gradient(180deg, var(--about) 8%, rgb(255, 255, 255) 56.41%);
     width:100vw;
-   
 }
-
+.aboutTexts{
+    padding: 0 88px;
+}
 .about{
-    color: var(--navbg);
-    margin:-1px 8px 8px 0px;
-    padding:64px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    text-align: center;
+    margin-top:-1px ; /*Remove white space between wave and about section*/
+    /* padding:64px; */
 }
-.about  p{
-text-align: left;
+.aboutImg{
+    z-index: -10;
+    width: 100vw;
 }
 .svgLanding{
     width:512px;
@@ -319,7 +327,27 @@ height:256px;
 .prize3{
     color: #CD7F32;
 }
-
+.judgeSec{
+    background-image: url(./svgs/bg4prismJudgesec.svg);
+}
+.jCardWrapper{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+.jCard{
+    width: 300px;
+    box-shadow: 0px 0px 4px 1px #557cca;
+    border-radius: 8px;
+}
+.jImg{
+    width:256px;
+    height:256px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+    
 /*Timeline section Start*/
 .bgPrism{
     opacity:0.8;
@@ -396,8 +424,8 @@ height:256px;
     }
 
     .sponsorLogo{
-    width:314px;
-    height:108px;
+    width:344px;
+    height:128px;
     }    
 
 /*FAQs section styling*/
@@ -498,7 +526,7 @@ details[open] p {
     }
 /*Styles for mobile screens less than 800px width*/
 @media(max-width:800px){
-    html,body{
+     html,body{
         overflow-x: hidden !important;
     }
     .logo{
@@ -508,7 +536,7 @@ details[open] p {
     .sec1{
         padding-top: 32px;
     }
-    .aboutImg,.typingtxt{
+    .typingtxt{
         display:none;
     }
     .mainHead{
