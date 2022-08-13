@@ -91,6 +91,8 @@ body
     height:96vh;
     width:100%;
     color: rgb(65, 65, 65);
+    background:url(latestImages/grungy-gray-marble-textured-background.jpg);
+    background-size: cover;
 }
 
 .landing_background
