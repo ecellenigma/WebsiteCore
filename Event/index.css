@@ -87,6 +87,7 @@ body
 /* -------Landing Page Start--------- */
 .landing
 {
+    margin-top: 56px !important;
     height:96vh;
     width:100%;
     color: rgb(65, 65, 65);
