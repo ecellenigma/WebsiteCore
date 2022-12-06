@@ -1,0 +1,92 @@
+*
+{
+    margin:0;
+    box-sizing: border-box;
+}
+
+.header
+{
+    background-color: black;
+    height:8vh;
+}
+.main_heading_continer
+{
+    height:50vh;
+    background:url("/images/background_blog.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    border: none;
+    border-radius: 20px;
+}
+.blog-main-heading
+{
+    font-size: 8vw;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.blog-container
+{
+    padding:2em;
+}
+.blog_main
+{
+    height: 100%;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    padding:2em;
+    border:2px rgb(177, 177, 177) solid;
+    border-radius: 10px;
+}
+.blog-para-1
+{
+    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: 600;
+}
+.footer
+{
+    background-color: black;
+    height:30vh;
+    width:100%;
+}
+.question
+{
+    margin:1em;
+}
+.button-container
+{
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.next-button
+{
+    font-size: 2vw;
+    padding: 1em;
+    border:2px rgb(95, 95, 95) solid;
+    font-family: 'Oswald', sans-serif;
+    border: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.common-author
+{
+    text-align: right;
+    margin:2em;
+}
+
+/*Added on 6Dec2022*/
+.rf{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+}
+.mt1{
+    margin-top: 1px !important;
+}
