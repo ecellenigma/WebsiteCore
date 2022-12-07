@@ -1,3 +1,18 @@
+/*Added on 7Dec2022*/
+
+:root{
+    --logoLightYellow : #e3b812;
+    --logoDarkYellow : #897115;
+    --logoGray : #4b4b44;
+}
+
+/*Added on 7Dec2022*/
+body{
+    background-image: url("./images/bgRectGradient.svg");
+     /* background-size:cover; */
+    background-repeat: repeat-x;
+}
+
 *
 {
     margin:0;
@@ -11,37 +26,46 @@
 }
 .main_heading_continer
 {
-    height:50vh;
-    background:url("/images/background_blog.jfif");
+    /* height:48vh; */
+    /* background:url("./images/background_blog.jfif"); */
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin-top: 4%;
     border: none;
     border-radius: 20px;
 }
 .blog-main-heading
 {
     font-size: 8vw;
+    margin: 64px !important;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
+
 .blog-container
 {
     padding:2em;
 }
+
+/*Edited on 7Dec2022*/
+
 .blog_main
 {
     height: 100%;
-    width:100%;
+    /* width:100%; */
+    width: 72%;
     background-color: rgb(255, 255, 255);
     font-family: 'Oswald', sans-serif;
     padding:2em;
-    border:2px rgb(177, 177, 177) solid;
-    border-radius: 10px;
+    /* border:2px rgb(177, 177, 177) solid; */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 1px var(--logoGray);
 }
+
+/*Edited on 7Dec2022*/
 .blog-para-1
 {
     font-family: 'Anek Devanagari', sans-serif;
@@ -53,10 +77,15 @@
     height:30vh;
     width:100%;
 }
+/*Edited on 7Dec2022*/
 .question
 {
     margin:1em;
 }
+.ans{
+    margin: 2em;
+}
+/*Edited on 7Dec2022*/
 .button-container
 {
     /* height: 100%; */
@@ -89,4 +118,21 @@
 }
 .mt1{
     margin-top: 1px !important;
+}
+
+/*Added on 7Dec2022*/
+
+.textGrad{
+    background: -webkit-linear-gradient(#4b4b44,var(--logoLightYellow));
+    font-size: 8vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+
+/*For mobile devices*/
+@media screen and (max-width: 600px){
+    .blog_main{
+        width: 96%;
+    }
 }
