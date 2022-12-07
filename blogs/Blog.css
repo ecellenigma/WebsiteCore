@@ -11,6 +11,7 @@ body{
     background-image: url("./images/bgRectGradient.svg");
      /* background-size:cover; */
     background-repeat: repeat-x;
+    font-size: 16px; 
 }
 
 *
@@ -50,7 +51,7 @@ body{
     padding:2em;
 }
 
-/*Edited on 7Dec2022*/
+/*Edited on 7Dec2022*/ 
 
 .blog_main
 {
@@ -62,7 +63,8 @@ body{
     padding:2em;
     /* border:2px rgb(177, 177, 177) solid; */
     border-radius: 8px;
-    box-shadow: 0px 2px 4px 1px var(--logoGray);
+    /* box-shadow: 0px 2px 4px 1px var(--logoGray); */
+    box-shadow: 1px 2px 4px 0px var(--logoGray);
 }
 
 /*Edited on 7Dec2022*/
@@ -70,11 +72,12 @@ body{
 {
     font-family: 'Anek Devanagari', sans-serif;
     font-weight: 600;
+    font-size: 1.25em;
 }
 .footer
 {
     background-color: black;
-    height:30vh;
+    height:24vh;
     width:100%;
 }
 /*Edited on 7Dec2022*/
@@ -106,8 +109,9 @@ body{
 }
 .common-author
 {
-    text-align: right;
-    margin:2em;
+    font-size: 1.25em;
+    text-align: left;
+    margin: 2em;
 }
 
 /*Added on 6Dec2022*/
@@ -129,10 +133,26 @@ body{
     -webkit-text-fill-color: transparent;   
 }
 
+/*Added on 7Dec2022*/
 
 /*For mobile devices*/
 @media screen and (max-width: 600px){
+    body{
+        background-repeat: repeat-y;
+    }
     .blog_main{
         width: 96%;
     }
+    .blog-main-heading{
+        font-size: 12vw;
+        margin-top: 128px !important;
+    }
+    .question{
+        margin:1em 0em;
+    }
+    .ans{
+        margin: 2em 0em ;
+    }
 }
+
+/*Added on 7Dec2022*/
