@@ -3,8 +3,10 @@
 }
 
 body{
-  background:#92bde7;
-  color:#485e74;
+  /* background:#a8cdf1; */
+  /* color:#485e74; */
+  background:#a8cdf1;
+  color:#383c3f;
   line-height:1.6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding:1em;
@@ -92,6 +94,8 @@ ul{
   background:#c9e6ff;
   border:0;
   text-transform: uppercase;
+  visibility: visible !important;
+
 }
 
 .contact form button:hover,.contact form button:focus{
@@ -143,3 +147,32 @@ ul{
 }
 
 /*Updated on 6Feb2023*/
+
+/*Updated on 7Feb2023*/
+.dropdown{
+  background-color: #a8cdf1;
+  border: 1px solid #a8cdf1;
+  transition: all 0.2s;
+}
+.dropdown:hover{
+  background-color: #f9feff;
+  border: 1px solid #a8cdf1;
+  cursor: pointer;
+}
+.mp8{
+  margin: 8px 0px 8px 0px;
+  padding: 8px;
+}
+.btnSubmit{
+  background-color: #92bde7 !important;
+  visibility: visible;
+  opacity: 1;
+}
+.btnSubmit:hover{
+  background-color: #a8cdf1 !important;
+  cursor: pointer;
+}
+.mtop{
+  margin-top: 16px;
+}
+/*Updated on 7Feb2023*/

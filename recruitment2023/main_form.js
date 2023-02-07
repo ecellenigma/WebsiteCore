@@ -43,8 +43,9 @@ function submitForm(e) {
     var q2 = getElementVal("q2");
     var q3 = getElementVal("q3");
     var q4 = getElementVal("q4");
+    var InterviewSlot = getElementVal("InterviewSlot");
 
-    saveMessages(name, branch, year, usn,email, phone, q1, q2, q3,q4);
+    saveMessages(name, branch, year, usn,email, phone, q1, q2, q3,q4,InterviewSlot);
     // console.log(name, branch, year, usn,email, phone, q1, q2, q3);
     // document.querySelector(".alert").style.display = "block";
     //   enable alert
@@ -67,7 +68,7 @@ fetch(scriptURL, { method: "POST", body: new FormData(form) })
 
 
 
-const saveMessages = (name, branch, year, usn,email, phone, q1, q2, q3,q4) => {
+const saveMessages = (name, branch, year, usn, email, phone, q1, q2, q3, q4, InterviewSlot) => {
     var newContactForm = contactFormDB.push();
 
     newContactForm.set({
@@ -81,6 +82,7 @@ const saveMessages = (name, branch, year, usn,email, phone, q1, q2, q3,q4) => {
         q2: q2,
         q3: q3,
         q4: q4,
+        InterviewSlot: InterviewSlot,
     });
 
 };
