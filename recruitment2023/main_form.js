@@ -23,8 +23,11 @@ document.getElementById("recruitment_form").addEventListener("submit", submitFor
 //Html form to Google sheets Linking
 // "https://script.google.com/macros/s/AKfycbxVO4l9YOMl90wcmb2oiht4qxZx6iKlxqnShMtK9qlgPQ1iRjodv06udmWO17_8qNXmWQ/exec";
 // "https://script.google.com/a/macros/nmit.ac.in/s/AKfycbxSJcH1SIyTwvK-3P7ng8FPtoKonRAfQiziKIULGeYKZCxhTThwz0LPbpJhPlQI-alP/exec"; - New app script link
+// "https://script.google.com/macros/s/AKfycbxsnQsi9EO5Hyx4md-ucyyNOB8o1Gk8sH2onlwgUblkRKwoTVfyPeK_Ln9xLoOg9XUk/exec"; Updated 7Feb2023
+
+
 const scriptURL =
-"https://script.google.com/macros/s/AKfycbyKrdP_qn5t5JOjc18XbSDp9FICy3h_oHDpMihCJJPi8G2qiWlWnvyLE5_FNWsxGQ/exec";
+"https://script.google.com/macros/s/AKfycbxsnQsi9EO5Hyx4md-ucyyNOB8o1Gk8sH2onlwgUblkRKwoTVfyPeK_Ln9xLoOg9XUk/exec";
 const form = document.forms["google-sheet"];
 
 function submitForm(e) {
