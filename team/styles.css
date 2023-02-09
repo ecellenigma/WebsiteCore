@@ -38,7 +38,7 @@ figure, p { margin: 0; }
 .hmm{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-family: 'Akaya Kanadaka', cursive;
+  font-family: 'Akaya Kanadaka', sans-serif;
   padding-top: 15px;
 }
 #our-team img {
@@ -73,3 +73,21 @@ figure, p { margin: 0; }
 #footer #footer-bottom { background-color: black; }
 #footer #mail { color: black; }
 @media (max-width: 992px) { #footer #conatct { border: none !important; } }
+
+
+/*Sri 9 Feb 2023*/
+.legacy{
+  /* background-color: #64C65E; */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  }
+  .legacy button{
+    /* background-color: #fafa !important;  */
+    all: unset
+  }
+  .legacy a{
+    font-size: 120px !important; 
+    text-decoration: none;
+  }
