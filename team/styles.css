@@ -78,9 +78,9 @@ figure, p { margin: 0; }
 /*Sri 9 Feb 2023*/
 .legacy{
   /* background-color: #64C65E; */
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display:flex !important;
+  justify-content:space-evenly !important;
+  align-items:center !important;
 
   }
   .legacy button{
