@@ -15,6 +15,9 @@ body
     width:100%;
 }
 
+.mtFix{
+    margin-top: 1px !important;
+}
 /* -------Navbar Start--------- */
 
 /* .navbar
@@ -87,8 +90,8 @@ body
 /* -------Landing Page Start--------- */
 .landing
 {
-    margin-top: 72px !important;
-    height:96vh;
+    margin-top: 64px !important;
+    height:96vh; 
     width:100%;
     color: rgb(65, 65, 65);
     background:url(latestImages/grungy-gray-marble-textured-background.jpg);
