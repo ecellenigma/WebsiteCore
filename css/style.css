@@ -6662,7 +6662,6 @@ section:hover .small-item-carousel .owl-next{
     left: 0;
     opacity: 0;
     position: absolute;
-    visibility: hidden;
     z-index: 1;
     width: 100%;
 }
@@ -6673,9 +6672,26 @@ section:hover .small-item-carousel .owl-next{
     margin-bottom: 5px;
 }
 
-li:hover ul#submenu {
+#AnnualReport:hover #submenu {
     opacity: 1;
     top: 50px;
     visibility: visible;
     padding: 5px 1px;
+}
+
+@media (min-width: 1024px) {
+    #submenu{
+        visibility: hidden;
+    
+    }
+}
+
+@media (max-width: 1024px) {
+    #submenu{
+        display:none;
+     }
+
+     #AnnualReport:hover #submenu{
+        display: contents;
+     } 
 }
