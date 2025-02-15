@@ -42,6 +42,7 @@ figure, p { margin: 0; }
   padding-top: 15px;
 }
 #our-team img {
+  /* padding-bottom: 20px; */
     height: 270px;
     object-fit: cover;
 }
